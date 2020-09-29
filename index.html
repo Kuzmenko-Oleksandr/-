@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кінотеатр</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <a class="active" href="index.html">Основна</a>
+        <a href="report.html">Звіт</a>
+        <a class="report_ref" href="#myModal1" data-toggle="modal">Вхід</a>
+    </div>
+    <p class="title">Фільми, що актуальні зараз</p>
+    <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <div style="height:  700px;">
+                <img src="img/Аватар.jpg" alt="">
+            </div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 700px;">
+                <img src="img/Леон.jpg" alt=""> 
+            </div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 700px;">
+                <img src="img/Сутінки.jpg" alt=""> 
+            </div>
+          </div>
+          <div class="slider__item">
+            <div style="height: 700px;">
+                <img src="img/1917.jpg" alt=""> 
+            </div>
+          </div>
+            <div class="slider__item">
+                <div style="height: 700px;">
+                    <img src="img/Дедпул.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+    </div>
+
+    <div id="myModal1" class="modal fade">
+        <div class="modal-dialog modal-l ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Вхід</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="center" method="POST">
+                        <input type="text" name="login" placeholder="Логін"><br>
+                        <input type="password" name="password" placeholder="Пароль" minlength="6"><br>
+                        <button><a type="submit" class="report_ref" name="do_login">Увійти</a><br></button>
+                        <p>Досі не маєте власного акаунту? Зробіть!</p>
+                        <button class="registration"><a href="#myModal2" class="report_ref" data-toggle="modal">Зареєструватись</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal fade">
+        <div class="modal-dialog modal-l">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Реєстрація</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <input type="text" name="login" placeholder="Логін">
+                        <input type="email" name="email" placeholder="Почта">
+                        <input type="password" name="password" placeholder="Пароль" minlength="6">
+                        <input type="password" name="password_2" placeholder="Повторіть пароль" minlength="6" >
+                        <button class="registr" type="submit" name="do_signup"><a href="">Зареєструватися</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="title">Види сеансу та ціни на білет</p>
+    <table>
+        <tr>
+            <th>Вид сеансу</th>
+            <th>Ціна білету</th>
+        </tr>
+        <tr>
+            <td>Стандарт</td>
+            <td>50 грн</td>
+        </tr>
+        <tr>
+            <td>3D</td>
+            <td>100 грн</td>
+        </tr>
+        <tr>
+            <td>IMAX</td>
+            <td>150 грн</td>
+        </tr>
+      </table>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
