@@ -1,0 +1,268 @@
+body {
+    font-family: Roboto;
+    background-color:rgb(20, 20, 20);
+}
+  
+.header {
+    padding: 16px 20px;
+    background: rgb(31, 31, 31);
+    border: solid 1px rgb(82, 82, 82);
+    width:100%; 
+    position: fixed;
+    z-index:999;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a {
+    color: white;
+    transition: 0.3s;
+    font-size: 15pt;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.header a:hover {
+    color: rgb(255, 94, 94);
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 500px;
+    max-width: 500px;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 100%;
+    color: #fff;
+    transition: 0.3s;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__item div img {
+    width: 99%;
+    border-radius: 10px;
+}
+
+.slider__control:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 30px;
+}
+
+.slider__control_right {
+    right: 30px;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+    font-size: 100px;
+    margin: 0px 15px;
+    text-align: center;
+}
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+form.active.focus,
+form.active:focus,
+form.focus,
+form:active.focus,
+form:active:focus,
+form:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+
+.title{
+    padding-top: 80px;
+}
+
+input {
+    outline:none;
+    position: center;
+}
+
+.center button {
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(255, 94, 94);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.center .registration {
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(31, 31, 31);
+    border: solid 1px rgb(255, 94, 94);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.modal-body .registr {
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(255, 94, 94);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.modal-body button a {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-body button a {
+    text-decoration: none;
+}
+
+.modal-body button:hover {
+    color: rgb(206, 58, 58);
+}
+
+.center button:hover {
+    background-color:  rgb(206, 58, 58);
+}
+
+.center .registration:hover {
+    background-color: rgb(255, 94, 94);
+}
+
+.center button a {
+    text-decoration: none;
+    color: white;
+}
+
+.center p {
+    color: grey;
+}
+
+form {
+    display: block;
+    padding: 30px;
+    width: 100%;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+form input {
+    box-sizing: border-box;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-content{
+    background: rgb(31, 31, 31);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .6);
+}
+
+.modal-body {
+    border-radius: 10px;
+}
+
+.modal-title {
+    color: white;
+}
+
+.close{
+    color: white;
+}
+
+.modal-content{
+    margin-top:200px !important;
+}
+
+table {
+    margin: 60px auto;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .2);
+}
+  
+th, td {
+    text-align: left;
+    padding: 15px;
+    color: white;
+}
+  
+tr:nth-child(even) {
+    background-color: #1b1b1b;
+}
