@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Основная страница</title>
-    <link rel="stylesheet" href="css/report_style.css">
+    <link rel="stylesheet" href="../css/report_style.css">
 </head>
 <body>
 <div class="title">
@@ -13,10 +13,10 @@
 </div>
 <div class="labs_containers">
     <div class="labs_containers_selected">
-        <a href="lab1.html">Лабораторна<br>робота №1</a>
+        <a href="../lab1/lab1.html">Лабораторна<br>робота №1</a>
     </div>
     <div class="labs_containers_unselected">
-        <a href="">Лабораторна<br>робота №2</a>
+        <a href="lab2.html">Лабораторна<br>робота №2</a>
     </div>
     <div class="labs_containers_unselected">
         <a href="">Лабораторна<br>робота №3</a>
@@ -43,37 +43,33 @@
 <div class="center">
     <div class="left_nav">
         <div class="left_nav_div">
-            <a href="report.html">Опис предметного<br>середовища</a>
+            <a href="lab2_tasks.html">Постановка задачи<br>Лабораторної роботи №2</a>
         </div>
         <div class="left_nav_div">
-            <a href="general_problem.html">Загальна постановка<br>задачі програми</a>
+            <a href="report.html">Ідентифікатори</a>
         </div>
-        <div class="left_nav_div_selected">
-            <a href="">Постановка задачі<br>Лабораторної роботи №1</a>
+        <div class="left_nav_div">
+            <a href="indent.html">Відступи</a>
         </div>
+        <div class="left_nav_div">
+            <a href="floating_elements.html">Плаваючі елементи</a>
+        </div>
+
         <div class="dropdown">
-            <button class="dropbtn">Структура документа</button>
+            <button class="dropbtn">Селектори</button>
             <div class="dropdown-content">
-                <a href="table_structure.html">Таблиця</a>
-                <a href="#">Форма</a>
-                <a href="#">Зображення</a>
+                <a href="selectors_teg_class.html">Селектори тегу і класу</a>
+                <a href="other_selectors.html">Інші селектори</a>
+                <a href="combination_selectors.html">Групування селекторів</a>
             </div>
         </div>
     </div>
     <div class="content">
-        <h1>Форма</h1>
-        <plaintext>
-            <form action="" class="center" method="POST">
-                <input type="text" name="login" placeholder="Логін"><br>
-                <input type="password" name="password" placeholder="Пароль" minlength="6"><br>
-                <button><a type="submit" class="report_ref" name="do_login">Увійти</a><br></button>
-                <p>Досі не маєте власного акаунту? Зробіть!</p>
-                <button class="registration"><a href="#myModal2" class="report_ref" data-toggle="modal">Зареєструватись</a></button>
-            </form>
-        </plaintext>
-
+        <h1>Інші селектори</h1>
+        <img src="../img/other1.png" alt="">
+        <img src="../img/other2.png" alt="">
     </div>
 </div>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>

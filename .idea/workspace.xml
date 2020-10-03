@@ -26,7 +26,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,7 +37,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
@@ -51,7 +55,7 @@
       <updated>1601388265596</updated>
       <workItem from="1601388267226" duration="2725000" />
       <workItem from="1601391304311" duration="13000" />
-      <workItem from="1601405977594" duration="973000" />
+      <workItem from="1601405977594" duration="4076000" />
     </task>
     <servers />
   </component>
@@ -59,9 +63,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="304" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601407728773">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601407728773" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1601391313549">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1601391313549" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1601409499156">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1601409499156" />
   </component>
 </project>
