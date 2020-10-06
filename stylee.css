@@ -1,0 +1,41 @@
+.divs{
+    justify-content: center;
+}
+.first{
+    background: #DAE8FC;
+    text-align: center;
+
+    margin: 0px 0px 50px 0px;
+    font-size: 15px;
+}
+
+.child {
+
+    background: #F8CECC;
+    border: 1px solid #F8CECC;
+    padding: 250px;
+    float: left;
+    width: 23.5%;
+    margin-right: 3%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.child:last-child {
+    margin-right: 0;
+    margin-left: 40px;
+}
+.third{
+    padding-top: 150px;
+    margin-top: 600px;
+    height: 300px;
+    text-align: center;
+    background: #D5E8D4;
+    font-size: 15px;
+
+}
+body{
+    background:#E1D5E7 ;
+}
