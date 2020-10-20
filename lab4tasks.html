@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lab4style.css">
+</head>
+<body style="text-align:center;">
+    <p><strong>Варіант 3<br>Масиви</strong></p>
+    <p>Введіть розмір масиву А</p>
+    <input type="text" name="size" id="size" value="1">
+    <button onclick="makeArray()">Click Here</button> 
+    <p>Масив А:</p>
+    <p id="array1"></p>
+    <p>Максимальний елемент масиву А:</p>
+    <p id="max"></p>
+    <p>Новий масив В:</p>
+    <p id="array2"></p>
+    <p>Відсортований масив В:</p>
+    <p id="array_sorted"></p>
+    <br><br>
+    <p><strong>Калькулятор</strong></p>
+
+    <input id="num1" />
+
+    <div id="operator_btns">
+    <button id="plus" class="operator" onclick="op='+'">+</button>
+    <button id="minus" class="operator" onclick="op='-'">-</button>
+    <button id="times" class="operator" onclick="op='*'">x</button>
+    <button id="divide" class="operator" onclick="op='/'">:</button>
+    <button id="power" class="operator" onclick="op='^'">^</button>
+    </div>
+    <input id="num2" /><br>
+    <button onclick="func()">равняется...</button>
+    <p id="result"></p>
+
+</form>
+    <div class="autocomplete" style="padding-top: 100px" >
+        <h1>Варіант 9</h1>
+        <h1>Введiть назву фiльму</h1>
+        <input id="myInput" type="text" name="words" placeholder="Впишiть ваш текст">
+    </div>
+<h1 style="text-align: center">Масиви
+</h1>
+<div class="center" style="justify-content: center; text-align: center;">
+
+
+<button  onclick="buttonPre()" id="result5">изначальный массив</button><br>
+<button style="margin-top: 20px" onclick="buttonPre()" id="result1">числа которые деляться на 2</button><br>
+<button style="margin-top: 20px" onclick="buttonPre()" id="result2">числа которые деляться на 2 и 3</button><br>
+<button style="margin-top: 20px" onclick="buttonPre()" id="result3">числа которые деляться на 3 </button><br>
+<button style="margin-top: 20px" onclick="quickSort()" id="result4">QuickSort</button>
+</div>
+    <div id="myLink" style="padding-top: 20px">Ссылка js - гiпертекстове посилання</div>
+    <input type="button" style="margin-top: 20px" onclick="countRabbits()" value="Считать кроликов! - обробник подiй">
+    <img style="width: 100%" src="${myimage}">
+    <script>
+        function countRabbits() {
+            for(let i=1; i<=3; i++) {
+                alert("Кролик номер " + i);
+            }
+        }
+        var myimage="de.jpg"
+        var today = new Date()
+        var day_night=current.getHours()
+    </script>
+
+    <script src="lab4js.js"></script>
+</body> 
+</html>
