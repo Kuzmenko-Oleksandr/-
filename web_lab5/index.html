@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 5</title>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type='text/jаvascript' src='http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <!-- <script type='text/jаvascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+    <script type='text/jаvascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+    <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> -->
+    <script src="jquery.floating-social-share.min.js"></script>
+    <link rel="stylesheet" href="jquery.floating-social-share.min.css">
+    <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=b2a9f5e665c8e5fa946b574cbf129889"></script>
+        <style>
+        .ui-menu { 
+            width: 150px;
+        }
+        body, select {
+        font-family: "Source Sans Pro", Calibri, sans-serif;
+        font-size: 16px;
+        color: #414042;
+        }
+        .ug-gallery-wrapper.ug-theme-default {
+        min-width: 310px !important;
+        }
+        .ww-informers-box-854754{
+            transform: translateX(445px);
+            -webkit-animation-name:ww-informers54;
+            animation-name:ww-informers54;
+            -webkit-animation-duration:1.5s;
+            animation-duration:1.5s;
+            white-space:nowrap;
+            overflow:hidden;
+            -o-text-overflow:ellipsis;
+            text-overflow:ellipsis;
+            font-size:12px;
+            font-family:Arial;
+            line-height:18px;
+            text-align:center;}
+            @-webkit-keyframes ww-informers54{
+                0%,80%{opacity:0}100%{opacity:1}
+                }
+            @keyframes ww-informers54{
+                0%,80%{opacity:0}100%{opacity:1}
+                }
+        </style>
+</head>
+<body style="text-align: center;">
+    <h1>3.1 Меню</h1>
+    <ul id="menu" style="margin: 0 auto;">
+        <li><div><a>Toys (n/a)</a></div></li>
+        <li><div><a>Books</a></div></li>
+        <li><div><a>Clothing</a></div></li>
+        <li><div><a>Electronics</a></div>
+    </ul>
+    <h1>3.2 Слайдер</h1>
+    <div id="slider" style="width: 50%; margin: 0 auto;"></div>
+    <h1>3.3 Вибір дати з календаря</h1>
+    <p>Дата: <input type="text" id="datepicker"></p>
+    <h1>4. Фотогалерею з можливістю перегляду збільшених зображень (UniteGallery)</h1>
+    <a href="hahahha.html"> Фотогалерея з можливістю перегляду збільшених зображень,
+     слайдер фотографій, слайдер відеоматеріалів
+    </a>
+    
+    <h1>5. Кнопки соціальних мереж (зліва)</h1>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ozdemirburak/jquery-floating-social-share"><img style="display: none;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"></a>
+    <h1>6.1 Погода у Москві</h1>
+    <div id="b2a9f5e665c8e5fa946b574cbf129889" class="ww-informers-box-854754">
+        <p class="ww-informers-box-854754">
+            <a href="https://world-weather.ru/pogoda/russia/moscow/">Подробнее</a>
+            <br>
+            <a href="https://world-weather.ru/pogoda/russia/samara/">https://world-weather.ru/pogoda/russia/samara/</a>
+        </p>
+    </div>
+    <h1>6.2 Курс валют</h1>
+    <div id='kurs-com-ua-informer-main-ukraine-298x130-blue-container'>
+        <a href="//old.kurs.com.ua/informer" id="kurs-com-ua-informer-main-ukraine-298x130-blue" title="Курс валют информер Украина" rel="nofollow" target="_blank">Информер курса валют</a>
+    </div>
+    <noscript><img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26' alt='kurs.com.ua: курс валют в Украине!' title='Курс валют' border='0' /></noscript>
+    <h1>6.3 Часы</h1>
+    <div id="tw_11_316654847">
+        <div style="width:120px; height:140px; margin: 0 auto;">
+            <a href="https://nochi.com/time/kiev-18881">Киев</a>
+            <br/>
+        </div>
+    </div>
+    <h1>7. Модулі jQuery для мультимедіа</h1>
+    <a href="gif/src/index.html">GIF</a>
+    <script>
+        $( function() {
+          $( "#menu" ).menu();
+        } );
+
+        $( function() {
+        $( "#slider" ).slider();
+        } );
+
+        $( function() {
+        $( "#datepicker" ).datepicker();
+        } );
+
+        jQuery(document).ready(function(){
+        jQuery("#gallery").unitegallery();
+        });
+
+        $("body").floatingSocialShare({
+          buttons: [
+            "facebook", "linkedin", "pinterest", "reddit", 
+            "telegram", "tumblr", "twitter", "viber", "vk", "whatsapp"
+          ],
+          text: "share with: ",
+          url: "https://github.com/ozdemirburak/jquery-floating-social-share"
+        });
+        (function() {var iframe = '<ifr'+'ame src="//old.kurs.com.ua/informer/inf2?color=blue" width="298" height="130" frameborder="0" vspace="0" scrolling="no" hspace="0"></ifr'+'ame>';var container = document.getElementById('kurs-com-ua-informer-main-ukraine-298x130-blue');container.parentNode.innerHTML = iframe;})();
+        var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","//s.bookcdn.com//css/cl/bw-cl-180x170r1.css"); document.getElementsByTagName("head")[0].appendChild(css_file); 
+        function setWidgetData_316654847(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_316654847 = -1; </script> <script type="text/javascript" charset="UTF-8" src="https://widgets.booked.net/time/info?ver=2&domid=589&type=11&id=316654847&scode=124&city_id=18881&wlangid=20&mode=2&details=0&background=ffffff&color=363636&add_background=ffffff&add_color=333333&head_color=ffffff&border=0&transparent=0">
+      </script>
+
+
+</body>
+</html>

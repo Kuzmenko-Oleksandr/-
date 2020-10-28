@@ -3,30 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="47b1fd47-c259-4d94-baa9-5a97c2d78359" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/form_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/form_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/general_problem.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/general_problem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/img_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/img_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/lab1_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/table_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/table_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/combination_selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/combination_selectors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/floating_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/floating_elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/indent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/indent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/other_selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/other_selectors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/selectors_teg_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/selectors_teg_class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/combination_selectors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/floating_elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/indent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/lab3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/lab3_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab3_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/other_selectors.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/selectors_teg_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/conclusions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/dymanic_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/dymanic_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/infomers.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/infomers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/social_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/social_buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/ug1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/ug2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/ug3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +47,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -89,6 +73,9 @@
       <workItem from="1601391304311" duration="13000" />
       <workItem from="1601405977594" duration="4076000" />
       <workItem from="1602002485584" duration="4304000" />
+      <workItem from="1603868095483" duration="79000" />
+      <workItem from="1603868270972" duration="192000" />
+      <workItem from="1603873385237" duration="1282000" />
     </task>
     <servers />
   </component>
@@ -104,6 +91,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1601391313549" />
+    <state x="505" y="248" width="670" height="675" key="run.anything.popup" timestamp="1603874932385">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="248" width="670" height="675" key="run.anything.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1603874932385" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1601409499156">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
