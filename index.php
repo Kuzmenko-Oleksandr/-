@@ -6,14 +6,32 @@
     <title>Кінотеатр</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .php{
+            text-align: center;
+            color: white;
+        }
+    </style>
+
 </head>
 <body>
+
     <div class="header" id="myHeader">
-        <a class="active" href="index.html">Основна</a>
+        <a class="active" href="index.php">Основна</a>
         <a href="lab1/report.html">Звіт</a>
+        <a href="a.php">echo.php</a>
         <a class="report_ref" href="#myModal1" data-toggle="modal">Вхід</a>
     </div>
     <p class="title">Фільми, що актуальні зараз</p>
+    <div class="php"><?php
+        echo "<hr>Сьогоднi: ";
+        date_default_timezone_set("UTC"); // Устанавливаем часовой пояс по Гринвичу
+        $time = time(); // Вот это значение отправляем в базу
+        $offset = 2; // Допустим, у пользователя смещение относительно Гринвича составляет +2 часа
+        $time += 2 * 3600; // Добавляем 2 часа к времени по Гринвичу
+        echo date("d-m-Y H:i:s", $time);
+        ?></div>
+
     <div class="slider">
         <div class="slider__wrapper">
           <div class="slider__item">
@@ -103,6 +121,7 @@
             <td>150 грн</td>
         </tr>
       </table>
+
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
