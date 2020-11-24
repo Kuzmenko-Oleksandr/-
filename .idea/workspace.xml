@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b1fd47-c259-4d94-baa9-5a97c2d78359" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/httpdconf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/httpdvhosts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/phpinfo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/phpinfo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/vh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/films.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpinfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/film_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/films_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/conclusions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/configuration.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/configuration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab6/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/forms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +61,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lab2" />
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/lab1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2" />
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,6 +87,10 @@
       <workItem from="1603873385237" duration="1521000" />
       <workItem from="1603883800205" duration="4000" />
       <workItem from="1605449981569" duration="1563000" />
+      <workItem from="1605643067843" duration="21000" />
+      <workItem from="1605688994512" duration="2387000" />
+      <workItem from="1606228924825" duration="2866000" />
+      <workItem from="1606232041460" duration="8388000" />
     </task>
     <servers />
   </component>
@@ -82,10 +102,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601407728773" />
-    <state x="660" y="448" key="NewPhpFileDialog" timestamp="1605450068535">
+    <state x="660" y="448" key="NewPhpFileDialog" timestamp="1606230638782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="660" y="448" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1605450068535" />
+    <state x="660" y="448" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606230638782" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1601391313549">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

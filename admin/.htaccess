@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "admin"
+AuthUserFile /Applications/MAMP/htdocs/teplo-bar/admin/.htpasswd
+Require valid-user
