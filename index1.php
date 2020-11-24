@@ -4,7 +4,7 @@ require_once('models/films.php');
 
 $link = db_connect();
 
-$films = film_get($link, $_GET['id']);
+$film = film_get($link, $_GET['id']);
 
 
 
@@ -153,6 +153,33 @@ $films = film_get($link, $_GET['id']);
             <td>150 грн</td>
         </tr>
       </table>
+<div class="container">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    <table id="myTable" class="table table-bordered table-dark">
+        <thead>
+        <tr>
+            <th>Назва фильму</th>
+            <th>Час</th>
+            <th>Iмя режисера</th>
+            <th>Прiзвище режисера</th>
+        </tr>
+        </thead>
+
+        <tbody >
+        <?php
+        foreach($films as $f):?>
+        <tr>
+            <td><?=$f['name_']?></td>
+            <td><?=$f['duration']?></td>
+            <td><?=$f['name_director']?></td>
+            <td><?=$f['surname_director']?></td>
+        </tr>
+        </tbody>
+        <?php endforeach;?>
+    </table>
+</div>
+
+
     <div id="81c39916624cc673a85c3126b04a361b"  class="ww-informers-box-854753" style="margin-left: 44%;">
         <p style="" class="ww-informers-box-854754"><a href="https://world-weather.ru/pogoda/ukraine/kyiv/">Подробнее</a>
             <br>
@@ -168,6 +195,29 @@ $films = film_get($link, $_GET['id']);
             <br/>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
     <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=81c39916624cc673a85c3126b04a361b">
     </script><style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center;margin: }@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}</style>
     <noscript><img src='//old.kurs.com.ua/static/images/informer/kurs.png' width='52' height='26' alt='kurs.com.ua: курс валют в Украине!' title='Курс валют' border='0' /></noscript>

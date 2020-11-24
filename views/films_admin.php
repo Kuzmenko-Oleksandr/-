@@ -19,7 +19,7 @@
                 <th>Имя фильма</th>
                 <th>Продолжительность</th>
                 <th>Имя режисера</th>
-                <th>Фамилия режисера</th>
+                <th >Фамилия режисера</th>
                 <th></th>
                 <th></th>
             </tr>
@@ -30,7 +30,7 @@
                     <td><?=$f["name_"]?></td>
                     <td><?=$f["duration"]?></td>
                     <td><?=$f["name_director"]?></td>
-                    <td><?=$f["surname_director"]?></td>
+                    <td ><?=$f["surname_director"]?></td>
                     <td><a href="script.php?page=films&action=edit&id=<?= $f['id'] ?>">Редактировать</a></td>
                     <td><a href="script.php?page=films&action=delete&id=<?= $f['id'] ?>">Удалить</a></td>
 

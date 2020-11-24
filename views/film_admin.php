@@ -12,26 +12,33 @@
 <div class="container">
     <h1 class="text-center">Таблица цен</h1>
     <div class="row">
-        <form action="script.php?page=films&action=<?= $_GET['action'] ?>&id=<?= $_GET['id'] ?>"  style="margin-top: 50px;" method="POST">
+
+
+        <form method="POST" action="script.php?page=films&action=<?= $_GET['action'] ?>&id=<?= $_GET['id'] ?>" style="margin-top: 50px;" >
+
             <label for="title"><p>Найменування товару(марка, модель)</p>
-                <input type="text" id="name_p" name="name_p" class="form-item"   style="width: 500px" value="<?= $film['name_'] ?>" autofocus required>
+                <input type="text" name='name_' class="form-item"   style="width: 500px" value="<?=$film['name_']?>" autofocus required>
             </label>
             <br>
             <label for="title"><p>Найменування товару(марка, модель)</p>
-                <input type="text" id="name_p" name="name_p" class="form-item"   style="width: 500px" value="<?= $film['duration'] ?>" autofocus required>
+                <input type="text" name='duration' class="form-item"   style="width: 500px" value="<?=$film['duration']?>" autofocus required>
             </label>
             <br>
             <label for="title"><p>Найменування товару(марка, модель)</p>
-                <input type="text" id="name_p" name="name_p" class="form-item"   style="width: 500px" value="<?= $film['name_director'] ?>" autofocus required>
+                <input type="text" name='name_director' class="form-item"   style="width: 500px" value="<?=$film['name_director']?>" autofocus required>
             </label>
             <br>
             <label for="title"><p>Найменування товару(марка, модель)</p>
-                <input type="text" id="name_p" name="name_p" class="form-item"   style="width: 500px" value="<?= $film['surname_director'] ?>" autofocus required>
+                <input type="text" name='surname_director' class="form-item"   style="width: 500px" value="<?=$film['surname_director']?>" autofocus required>
             </label>
             <br>
 
+
             <input style="border: 1px solid black;" type="submit" value="Сохранить" class="btn">
+
+
         </form>
+
     </div>
 </div>
 

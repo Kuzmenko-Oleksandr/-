@@ -28,7 +28,8 @@ function film_get($link, $id_film) {
 
     return $film;
 }
-function film_new($link, $name_, $duration,$name_director,$surname_director) {
+function film_new($link, $name_, $duration,$name_director,$surname_director)
+{
     $name_ = trim($name_);
     $duration = trim($duration);
     $name_director = trim($name_director);
@@ -38,7 +39,7 @@ function film_new($link, $name_, $duration,$name_director,$surname_director) {
         return false;
     }
 
-    $g = "INSERT INTO film (name_,duration,name_director,surname_director ) VALUES ('%s', '%s', '%s','%s')";
+    $g = "INSERT INTO film (name, duration, name_director, surname_director ) VALUES ('%s', '%s', '%s','%s')";
 
     $query = sprintf($g, mysqli_real_escape_string($link, $name_), mysqli_real_escape_string($link, $duration), mysqli_real_escape_string($link, $name_director), mysqli_real_escape_string($link, $surname_director));
 
@@ -62,7 +63,7 @@ function film_edit($link, $id, $name_, $duration,$name_director,$surname_directo
         return false;
     }
 
-    $sql = "UPDATE film SET name_='%s', duration='%s',name_director='%s',surname_director='%s' WHERE id='%d'";
+    $sql = "UPDATE film SET name_='%s', duration='%s', name_director='%s', surname_director='%s' WHERE id='%d'";
 
     $query = sprintf($sql, mysqli_real_escape_string($link, $name_), mysqli_real_escape_string($link, $duration), mysqli_real_escape_string($link, $name_director), mysqli_real_escape_string($link, $surname_director), $id);
 
