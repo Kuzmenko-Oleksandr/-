@@ -37,32 +37,33 @@ $film = film_get($link, $_GET['id']);
         <a class="active" href="index1.php">Основна</a>
         <a href="lab1/report.html">Звіт</a>
         <a class="report_ref" href="#myModal1" data-toggle="modal">Вхід</a>
+
     </div>
     <p class="title">Фільми, що актуальні зараз</p>
     <form style="width: 50%" class="search">
             <input type="search" name="search" placeholder="Бажаєте знайти фільм?">
             <button style="width: 20%; border: none; border-radius: 5px; background-color: aquamarine;" type="submit">Пошук фільму</button>
         </form>
-    <div class="php"><?php
-            if (( $search = $_GET['search'])) {
-                $search = $_GET['search'];
-                echo('За вашим запитом "'.$search.'" не знайдено жодного фільму');
-            }
-    
-        echo "<hr>Сьогоднi: ";
-        date_default_timezone_set("UTC");
-        $time = time();
-        $offset = 2;
-        $time += 2 * 3600;
-        echo date("d-m-Y H:i:s", $time);
-
-
-        if ($login = $_POST['login']) {
-        $login = $_POST['login'];
-        echo("<br>Ви ввійшли як користувач: ".$login);
-        }
-        $password = $_POST['password'];
-        ?></div>
+<!--    <div class="php">--><?php
+//            if (( $search = $_GET['search'])) {
+//                $search = $_GET['search'];
+//                echo('За вашим запитом "'.$search.'" не знайдено жодного фільму');
+//            }
+//
+//        echo "<hr>Сьогоднi: ";
+//        date_default_timezone_set("UTC");
+//        $time = time();
+//        $offset = 2;
+//        $time += 2 * 3600;
+//        echo date("d-m-Y H:i:s", $time);
+//
+//
+//        if ($login = $_POST['login']) {
+//        $login = $_POST['login'];
+//        echo("<br>Ви ввійшли як користувач: ".$login);
+//        }
+//        $password = $_POST['password'];
+//        ?><!--</div>-->
 
     <div class="slider">
         <div class="slider__wrapper">
@@ -104,10 +105,11 @@ $film = film_get($link, $_GET['id']);
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
-                    <form action="index1.php" class="center" method="POST">
-                        <input type="text" name="login" placeholder="Логін"><br>
-                        <input type="password" name="password" placeholder="Пароль" minlength="6"><br>
-                        <button><a type="submit" class="report_ref" name="do_login">Увійти</a><br></button>
+                    <form action="" class="center" method="POST">
+
+                        <input type="text" name="login" placeholder="Логін" ><br>
+                        <input type="password" id="pass" name="password" placeholder="Пароль"><br>
+                        <button><a type="submit" class="report_ref" >Увійти</a><br></button>
                         <p>Досі не маєте власного акаунту? Зробіть!</p>
                         <button class="registration"><a href="#myModal2" class="report_ref" data-toggle="modal">Зареєструватись</a></button>
                     </form>
@@ -125,15 +127,18 @@ $film = film_get($link, $_GET['id']);
                 <div class="modal-body">
                     <form action="" method="post">
                         <input type="text" name="login" placeholder="Логін">
-                        <input type="email" name="email" placeholder="Почта">
-                        <input type="password" name="password" placeholder="Пароль" minlength="6">
-                        <input type="password" name="password_2" placeholder="Повторіть пароль" minlength="6" >
+                        <input type="email" name="email" placeholder="Почта" >
+                        <input type="password" name="password" placeholder="Пароль" minlength="6" >
+                        <input type="password" name="password_2" placeholder="Повторіть пароль" minlength="6"  >
                         <button class="registr" type="submit" name="do_signup"><a href="">Зареєструватися</a></button>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>
+
+
     <p class="title">Види сеансу та ціни на білет</p>
     <table>
         <tr>
@@ -154,7 +159,7 @@ $film = film_get($link, $_GET['id']);
         </tr>
       </table>
 <div class="container">
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" aria-label="Search" placeholder="Пошук фiльму">
     <table id="myTable" class="table table-bordered table-dark">
         <thead>
         <tr>

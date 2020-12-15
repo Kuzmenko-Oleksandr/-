@@ -7,14 +7,26 @@
     <title>Блок1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<style>
+    th, td, a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: red;
+
+    }
+</style>
 
 
-<body>
+<body style="background: #4a4949">
 <div class="container">
     <div class="row">
-        <a href="script.php?page=films&action=add">Добавить</a>
+
+        <div class="col-sm">
         <br>
-        <table border="1">
+        <table class="table" border="1">
+            <thead class="thead-light">
             <tr>
                 <th>Имя фильма</th>
                 <th>Продолжительность</th>
@@ -23,6 +35,7 @@
                 <th></th>
                 <th></th>
             </tr>
+            </thead>
             <?php
             foreach($films as $f):?>
                 <tr>
@@ -40,7 +53,12 @@
 
         </table>
         <br>
-        <a href="index.php">Вернуться на главную панель</a>
+        </div>
+
+    </div>
+    <div class="row ">
+        <div class="col-sm text-center"><a href="script.php?page=films&action=add">Добавить</a></div>
+        <div class="col-sm text-center"><a href="index.php">Вернуться на главную панель</a></div>
     </div>
 </div>
 

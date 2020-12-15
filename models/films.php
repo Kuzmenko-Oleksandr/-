@@ -39,7 +39,7 @@ function film_new($link, $name_, $duration,$name_director,$surname_director)
         return false;
     }
 
-    $g = "INSERT INTO film (name, duration, name_director, surname_director ) VALUES ('%s', '%s', '%s','%s')";
+    $g = "INSERT INTO film (name_, duration, name_director, surname_director ) VALUES ('%s', '%s', '%s','%s')";
 
     $query = sprintf($g, mysqli_real_escape_string($link, $name_), mysqli_real_escape_string($link, $duration), mysqli_real_escape_string($link, $name_director), mysqli_real_escape_string($link, $surname_director));
 

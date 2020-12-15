@@ -2,91 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47b1fd47-c259-4d94-baa9-5a97c2d78359" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/bdindex1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/classification1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/classification2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/conget.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/connections.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/datalog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/db_connect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/db_vivod.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/dbforeachindex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/eternitys.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/infolog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/normalization.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/scripts1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/scripts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/scripts3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/scripts4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/scriptsget.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/searchindextable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/searchphoto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tableindexlab7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tables1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tables2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tables3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tables4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/¬ ª¥â.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/¬ ª¥â1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/ááá.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/åâ¬«.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/analize.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/conclusions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/lab7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/lab7_tasks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/physical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index1.php" beforeDir="false" afterPath="$PROJECT_DIR$/index1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/conclusions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/form_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/form_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/general_problem.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/general_problem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/img_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/img_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/lab1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/lab1_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/lab1_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/table_structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/table_structure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/combination_selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/combination_selectors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/floating_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/floating_elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/indent.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/indent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/lab2_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/lab2_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/other_selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/other_selectors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2/selectors_teg_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab2/selectors_teg_class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/conclusions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/divs.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/divs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/lab3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/lab3_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/lab3_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/look.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/look.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/mockup.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/mockup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/6.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/arrays.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/arrays.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/conclusions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/entity.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/entity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/handler.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/lab4.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/lab4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/lab4_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/lab4_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/script_tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/script_tag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/url.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/url.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/conclusions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/dymanic_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/dymanic_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/infomers.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/infomers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/lab5.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/lab5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/lab5_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/lab5_tasks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/social_buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/social_buttons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/ug1.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/ug2.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab5/ug3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/ug3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/code.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/conclusions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/configuration.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/configuration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/date.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/date.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/jquery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/lab6.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6/lab6_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/lab6_tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/conclusions.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/conclusions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/films.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/films.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/film_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/film_admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/films_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/films_admin.php" afterDir="false" />
@@ -132,14 +51,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lab2" />
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/lab1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin" />
+      <recent name="$PROJECT_DIR$/lab2" />
+      <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -165,6 +86,11 @@
       <workItem from="1606232041460" duration="8388000" />
       <workItem from="1606250507495" duration="46000" />
       <workItem from="1606250613344" duration="6260000" />
+      <workItem from="1606292930950" duration="1081000" />
+      <workItem from="1606306210535" duration="7000" />
+      <workItem from="1606733150444" duration="581000" />
+      <workItem from="1607946792176" duration="4679000" />
+      <workItem from="1608038024696" duration="2601000" />
     </task>
     <servers />
   </component>
@@ -180,10 +106,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606250550848" />
-    <state x="660" y="448" key="NewPhpFileDialog" timestamp="1606254674331">
+    <state x="660" y="448" key="NewPhpFileDialog" timestamp="1608041058973">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="660" y="448" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1606254674331" />
+    <state x="660" y="448" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1608041058973" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1601391313549">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

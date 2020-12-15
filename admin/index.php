@@ -17,11 +17,13 @@
 <div class="container text-center" >
     <h1 style="padding-top: 250px; color: white">Панель администратора</h1>
     <div class="row" style="padding-top: 20px; ">
+        <div class="col-sm text-center">
         <form action="script.php?page=films" method="post">
-            <div class="col-lg-1">
-                <input type="submit" value="Блок 1">
-            </div>
+
+                <input class="btn btn-danger" type="submit" value="Блок 1">
+
         </form>
+        </div>
 
     </div>
 </div>

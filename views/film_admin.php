@@ -7,34 +7,36 @@
     <title>Блок1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<style>
+    p,h1{color: white}
+</style>
 
-<body>
+<body style="background: #4a4949">
 <div class="container">
     <h1 class="text-center">Таблица цен</h1>
-    <div class="row">
+    <div class="row text-center">
 
 
         <form method="POST" action="script.php?page=films&action=<?= $_GET['action'] ?>&id=<?= $_GET['id'] ?>" style="margin-top: 50px;" >
 
-            <label for="title"><p>Найменування товару(марка, модель)</p>
+            <label for="title"><p>Имя фильма</p>
                 <input type="text" name='name_' class="form-item"   style="width: 500px" value="<?=$film['name_']?>" autofocus required>
             </label>
             <br>
-            <label for="title"><p>Найменування товару(марка, модель)</p>
+            <label for="title"><p>Продолжительность</p>
                 <input type="text" name='duration' class="form-item"   style="width: 500px" value="<?=$film['duration']?>" autofocus required>
             </label>
             <br>
-            <label for="title"><p>Найменування товару(марка, модель)</p>
+            <label for="title"><p>Имя режисера</p>
                 <input type="text" name='name_director' class="form-item"   style="width: 500px" value="<?=$film['name_director']?>" autofocus required>
             </label>
             <br>
-            <label for="title"><p>Найменування товару(марка, модель)</p>
+            <label for="title"><p>Фамилия режисера</p>
                 <input type="text" name='surname_director' class="form-item"   style="width: 500px" value="<?=$film['surname_director']?>" autofocus required>
             </label>
             <br>
 
-
-            <input style="border: 1px solid black;" type="submit" value="Сохранить" class="btn">
+            <input style="border: 1px solid black;" type="submit" value="Сохранить" class="btn btn-danger">
 
 
         </form>
