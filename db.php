@@ -10,9 +10,6 @@ function db_connect() {
     if(!mysqli_set_charset($link, "utf8")) {
         print("Error: ".mysqli_error($link));
     }
-
     return $link;
 }
-
-
 ?>

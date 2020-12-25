@@ -1,14 +1,31 @@
 <?php
 require_once("db.php");
 require_once('models/films.php');
-
 $link = db_connect();
-
 $film = film_get($link, $_GET['id']);
 
+session_start();
+if(isset($_GET['lang']) && !empty($_GET['lang'])){
+ $_SESSION['lang'] = $_GET['lang'];
+//  setcookie("Selected_lang", $_SESSION['lang'], time()+15552000);
+ if(isset($_SESSION['lang']) && $_SESSION['lang'] != $_GET['lang']){
+  echo "<script type='text/javascript'> location.reload(); </script>";
+ }
+}
+
+if(isset($_SESSION['lang'])){
+ include "lang_".$_SESSION['lang'].".php";
+}else{
+ include "lang_eng.php";
+}
 
 
 ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,52 +36,29 @@ $film = film_get($link, $_GET['id']);
     <link rel="stylesheet" href="css/style.css">
     <script src="web_lab5/jquery.floating-social-share.min.js"></script>
     <link rel="stylesheet" href="web_lab5/jquery.floating-social-share.min.css">
-   
-    <style>
-        .php{
-            text-align: center;
-            color: white;
-        }
-        * {
-            font-family: Helvetica;
-        }
-    </style>
-
 </head>
 <body>
+    <script>
+        function changeLang(){
+        document.getElementById('form_lang').submit();
+        }
+    </script>
 
     <div class="header" id="myHeader">
-        <a class="active" href="index1.php">Основна</a>
-        <a href="lab1/report.html">Звіт</a>
-        <a class="report_ref" href="#myModal1" data-toggle="modal">Вхід</a>
-
+        <a class="active" href="index1.php"><?= _MENU1 ?></a>
+        <a href="lab1/report.html"><?= _MENU2 ?></a>
+        <a class="report_ref" href="php-auth/index.php" ><?= _MENU3 ?></a>
     </div>
-    <p class="title">Фільми, що актуальні зараз</p>
-    <form style="width: 50%" class="search">
-            <input type="search" name="search" placeholder="Бажаєте знайти фільм?">
-            <button style="width: 20%; border: none; border-radius: 5px; background-color: aquamarine;" type="submit">Пошук фільму</button>
-        </form>
-<!--    <div class="php">--><?php
-//            if (( $search = $_GET['search'])) {
-//                $search = $_GET['search'];
-//                echo('За вашим запитом "'.$search.'" не знайдено жодного фільму');
-//            }
-//
-//        echo "<hr>Сьогоднi: ";
-//        date_default_timezone_set("UTC");
-//        $time = time();
-//        $offset = 2;
-//        $time += 2 * 3600;
-//        echo date("d-m-Y H:i:s", $time);
-//
-//
-//        if ($login = $_POST['login']) {
-//        $login = $_POST['login'];
-//        echo("<br>Ви ввійшли як користувач: ".$login);
-//        }
-//        $password = $_POST['password'];
-//        ?><!--</div>-->
-
+    <p class="title"><?= _TITLE ?></p>
+    <form method='get' action='' id='form_lang' >
+    <?= _SELECT_LANG ?><select name='lang' onchange='changeLang();' >
+            <option value='eng' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'eng'){ echo "selected"; } ?> ><?= _LANG1 ?></option>
+            <option value='ukr' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'ukr'){ echo "selected"; } ?> ><?= _LANG2 ?></option>
+            <option value='rus' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'rus'){ echo "selected"; } ?> ><?= _LANG3 ?></option>
+            </select>
+    </form>
+    <!-- <p class="cookie"><?= _LANG_SELECTED?><?php echo $_COOKIE["Selected_lang"];?></p> -->
+    <p class="cookie"><?= _LANG_SELECTED ?> <?php echo $_GET['lang']; ?></p>
     <div class="slider">
         <div class="slider__wrapper">
           <div class="slider__item">
@@ -96,22 +90,20 @@ $film = film_get($link, $_GET['id']);
         <a class="slider__control slider__control_left" href="#" role="button"></a>
         <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
     </div>
-
     <div id="myModal1" class="modal fade">
         <div class="modal-dialog modal-l ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Вхід</h4>
+                    <h4 class="modal-title"><?= _ENTER1 ?></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
                     <form action="" class="center" method="POST">
-
-                        <input type="text" name="login" placeholder="Логін" ><br>
-                        <input type="password" id="pass" name="password" placeholder="Пароль"><br>
-                        <button><a type="submit" class="report_ref" >Увійти</a><br></button>
-                        <p>Досі не маєте власного акаунту? Зробіть!</p>
-                        <button class="registration"><a href="#myModal2" class="report_ref" data-toggle="modal">Зареєструватись</a></button>
+                        <input type="text" name="login" placeholder="<?= _LOGIN ?>" ><br>
+                        <input type="password" id="pass" name="password" placeholder="<?= _PASSWORD ?>"><br>
+                        <button><a type="submit" class="report_ref" ><?= _ENTER2 ?></a><br></button>
+                        <p><?= _ACCOUNT ?></p>
+                        <button class="registration"><a href="#myModal2" class="report_ref" data-toggle="modal"><?= _REG1 ?></a></button>
                     </form>
                 </div>
             </div>
@@ -121,73 +113,66 @@ $film = film_get($link, $_GET['id']);
         <div class="modal-dialog modal-l">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Реєстрація</h4>
+                    <h4 class="modal-title"><?= _REG2 ?></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div>
                 <div class="modal-body">
                     <form action="" method="post">
-                        <input type="text" name="login" placeholder="Логін">
-                        <input type="email" name="email" placeholder="Почта" >
-                        <input type="password" name="password" placeholder="Пароль" minlength="6" >
-                        <input type="password" name="password_2" placeholder="Повторіть пароль" minlength="6"  >
-                        <button class="registr" type="submit" name="do_signup"><a href="">Зареєструватися</a></button>
+                        <input type="text" name="login" placeholder="<?= _LOGIN ?>">
+                        <input type="email" name="email" placeholder="<?= _MAIL ?>" >
+                        <input type="password" name="password" placeholder="<?= _PASSWORD ?>" minlength="6" >
+                        <input type="password" name="password_2" placeholder="<?= _PASSWORD2 ?>" minlength="6"  >
+                        <button class="registr" type="submit" name="do_signup"><a href=""><?= _REG2 ?></a></button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-    <p class="title">Види сеансу та ціни на білет</p>
+    <p class="title"><?= _SESSIONS ?></p>
     <table>
         <tr>
-            <th>Вид сеансу</th>
-            <th>Ціна білету</th>
+            <th><?= _SESSION_TYPE ?></th>
+            <th><?= _TICKET_PRICE ?></th>
         </tr>
         <tr>
-            <td>Стандарт</td>
-            <td>50 грн</td>
+            <td><?= _STANDART ?></td>
+            <td><?= _50GRN ?></td>
         </tr>
         <tr>
             <td>3D</td>
-            <td>100 грн</td>
+            <td><?= _100GRN ?></td>
         </tr>
         <tr>
             <td>IMAX</td>
-            <td>150 грн</td>
+            <td><?= _150GRN ?></td>
         </tr>
       </table>
-<div class="container">
-        <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" aria-label="Search" placeholder="Пошук фiльму">
-    <table id="myTable" class="table table-bordered table-dark">
-        <thead>
-        <tr>
-            <th>Назва фильму</th>
-            <th>Час</th>
-            <th>Iмя режисера</th>
-            <th>Прiзвище режисера</th>
-        </tr>
-        </thead>
-
-        <tbody >
-        <?php
-        foreach($films as $f):?>
-        <tr>
-            <td><?=$f['name_']?></td>
-            <td><?=$f['duration']?></td>
-            <td><?=$f['name_director']?></td>
-            <td><?=$f['surname_director']?></td>
-        </tr>
-        </tbody>
-        <?php endforeach;?>
-    </table>
-</div>
-
-
-    <div id="81c39916624cc673a85c3126b04a361b"  class="ww-informers-box-854753" style="margin-left: 44%;">
+    <div class="container">
+            <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" aria-label="Search" placeholder="<?= _FILM_SEARCH ?>">
+        <table id="myTable" class="table table-bordered table-dark">
+            <thead>
+            <tr>
+                <th><?= _FILM_NAME ?></th>
+                <th><?= _FILM_TIME ?></th>
+                <th><?= _FILM_DIRECTOR_NAME ?></th>
+                <th><?= _FILM_DIRECTOR_SURNAME ?></th>
+            </tr>
+            </thead>
+            <tbody >
+            <?php
+            foreach($films as $f):?>
+            <tr>
+                <td><?=$f['name_']?></td>
+                <td><?=$f['duration']?></td>
+                <td><?=$f['name_director']?></td>
+                <td><?=$f['surname_director']?></td>
+            </tr>
+            </tbody>
+            <?php endforeach;?>
+        </table>
+    </div>
+    <div id="81c39916624cc673a85c3126b04a361b"  class="ww-informers-box-854753" style="margin-left: 44%;"><br>
         <p style="" class="ww-informers-box-854754"><a href="https://world-weather.ru/pogoda/ukraine/kyiv/">Подробнее</a>
-            <br>
             <a href="https://world-weather.ru/">world-weather.ru</a>
         </p>
     </div>
@@ -202,14 +187,12 @@ $film = film_get($link, $_GET['id']);
     </div>
     <script>
         function myFunction() {
-            // Declare variables
             var input, filter, table, tr, td, i, txtValue;
             input = document.getElementById("myInput");
             filter = input.value.toUpperCase();
             table = document.getElementById("myTable");
             tr = table.getElementsByTagName("tr");
 
-            // Loop through all table rows, and hide those who don't match the search query
             for (i = 0; i < tr.length; i++) {
                 td = tr[i].getElementsByTagName("td")[0];
                 if (td) {

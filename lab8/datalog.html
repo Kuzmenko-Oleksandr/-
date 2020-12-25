@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аналіз предметної області</title>
+    <title>Постановка задачі</title>
     <link rel="stylesheet" href="../css/report_style.css">
 </head>
 <body>
@@ -30,11 +30,11 @@
         <div class="labs_containers_unselected">
             <a href="../lab6/lab6.html">Лабораторна<br>робота №6</a>
         </div>
-        <div class="labs_containers_selected">
-            <a href="lab7.html">Лабораторна<br>робота №7</a>
-        </div>
         <div class="labs_containers_unselected">
-            <a href="../lab8/lab8.html">Лабораторна<br>робота №8</a>
+            <a href="../lab7/lab7.html">Лабораторна<br>робота №7</a>
+        </div>
+        <div class="labs_containers_selected">
+            <a href="lab8.html">Лабораторна<br>робота №8</a>
         </div>
         <div class="labs_containers_unselected">
             <a href="">Лабораторна<br>робота №9</a>
@@ -43,37 +43,28 @@
     <div class="center">
         <div class="left_nav">
             <div class="left_nav_div">
-                <a href="lab7_tasks.html">Постановка задачі<br>Лабораторної роботи №7</a>
-            </div>
-            <div class="left_nav_div_selected">
-                <a href="analize.html">Аналіз предметної області</a>
+                <a href="lab8_tasks.html">Постановка задачі<br>Лабораторної роботи №8</a>
             </div>
             <div class="left_nav_div">
-                <a href="physical.html">Фізична реалізація</a>
+                <a href="infolog.html">Інфологічна модель</a>
+            </div>
+            <div class="left_nav_div_selected">
+                <a href="datalog.html">Даталогічна модель</a>
+            </div>
+            <div class="left_nav_div">
+                <a href="sql.html">SQL-запити до БД</a>
+            </div>
+            <div class="left_nav_div">
+                <a href="autorization.html">Авторизація</a>
+            </div>
+            <div class="left_nav_div">
+                <a href="langs.html">Вибір мов</a>
             </div>
             <div class="left_nav_div">
                 <a href="conclusions.html">Висновки</a>
             </div>
         </div>
 <div class="content">
-    <h1>Аналіз предметної області</h1>
-    <h3>База даних створюється для інформаційного обслуговування співробітників кінотеатрів. БВ повинна 
-        містити дані про фільми, сеанси, зали, білети, глядачів та акторів. </h3><br>
-    <h3>Після аналізу предметної області можна виділити ряд сутностей, і приступити до проектування інфологічної моделі. 
-        Виділимо базові сутності та зв'язки цієї предметної області: 
-    </h3>
-    <img width=50% src="../img/eternitys.png" alt="">
-    <h3>Далі надамо класифікацію сутностей та зв'язків даної інфологічної моделі</h3>
-    <img width=60% src="../img/classification1.png" alt="">
-    <img width=60% src="../img/classification2.png" alt="">
-    <h3>Наступним кроком до повного аналізу предметної області є ER діаграма.
-         ER діаграма представляє собою візуальне зображення зв'язків з їхніх описом.
-          Така діаграма дозвляє замовнику бачити, яким чином пов'язані між собою сутності 
-          замовленної бази даних.
-    </h3>
-    <img width=60% src="../img/infolog.png" alt="">
-    <h3>Для кращого розуміння зв'язків необхідно додати їхній опис. Опис зв'язків представлений в наступній таблиці</h3>
-    <img width=60% src="../img/connections.png" alt="">
     <h3>Далі ми можемо перейти до побудови даталогічної моделі даних на основі інфологічного аналізу предметної області. Але перед
         побудовою даталогічної діаграми спершу необхідно нормалізувати модель даних. В нашому випадку атрибут "ПІБ" є складеним та 
         порушує 1НФ. Щоб нормалізувати нашу базу даних, необхідно розділити кожен атрибут "ПІБ" або "ПІ" на відпідні атрибути 
